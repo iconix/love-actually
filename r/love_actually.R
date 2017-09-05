@@ -51,7 +51,7 @@ by_speaker_scene
 library(reshape2)
 # reshape2/acast: cast a "molten" (i.e., long-format) data frame into a wide-format matrix
   # fun.aggregate: aggregate function needed if variables do not id a single observation for each output cell
-  # setting to "length" below guarantees binary encoding (1, 0) since each character-scene pair has exactly one row in by_speaker_scence
+  # setting to "length" below guarantees binary encoding (1, 0) since each character-scene pair has exactly one row in by_speaker_scece
 # "character ~ scene"  represents a casting formula: characters become id vars for each row, and scenes become column names (see: http://seananderson.ca/2013/10/19/reshape.html)
 speaker_scene_matrix <- by_speaker_scene %>%
   acast(character ~ scene, fun.aggregate = length)
