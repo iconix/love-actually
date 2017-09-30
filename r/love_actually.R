@@ -79,6 +79,7 @@ ordering
 
 # dplyr/n: the number of observations in the current group
 # dplyr/ungroup: remove groupings from group_by
+# dplyr/mutate: adds new variables that are functions of existing variables
 # base/factor: used to encode a vector as a factor
 scenes <- by_speaker_scene %>%
   filter(n() > 1) %>%        # scenes with > 1 character
