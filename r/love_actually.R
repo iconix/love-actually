@@ -1,3 +1,35 @@
+### R Libraries
+#
+## tidyverse (dplyr, stringr, tidyr, ggplot2, magrittr), reshape2, stats, graphics, igraph, base
+#
+#
+## Tidyverse (http://tidyverse.org/) is a collection of R packages working in harmony towards tidying your data.
+## As explained by the collection's companion book _R for Data Science_ (http://r4ds.had.co.nz/introduction.html),
+## "Tidy data is important because the consistent structure lets you focus your struggle on questions about the data,
+## not fighting to get the data into the right form for different functions." Tidyverse (currently) contains
+## 3 of the top 10 most downloaded R packages (https://www.rdocumentation.org/trends): `readr`, `dplyr`, and `ggplot2`.
+#
+## Reshape2 (https://github.com/hadley/reshape) is written by one of the chief contributors to the Tidyverse
+## (who, I just discovered while checking out his Github, is Chief Scientist at RStudio - https://github.com/hadley).
+## It "makes it easy to transform data between wide and long formats" (http://seananderson.ca/2013/10/19/reshape.html) -
+## the whole melting + casting paradigm of this library is pretty cool.
+## It turns out that you need wide-format data for some types of data analysis and long-format data for others.
+## In reality, you need long-format data much more commonly than wide-format data. For example, `ggplot2` requires long-format data
+## (technically "tidy data" (http://vita.had.co.nz/papers/tidy-data.html)), `plyr` requires long-format data, and most modelling functions
+## (such as `lm()`, `glm()`, and `gam()`) require long-format data. But people often find it easier to record their data in wide format.
+## - From "An Introduction to reshape2" (http://seananderson.ca/2013/10/19/reshape.html) by Sean C. Anderson (http://seananderson.ca/)
+#
+## igraph (http://igraph.org/) is collection of network analysis tools.
+#
+## Base R (https://stat.ethz.ch/R-manual/R-devel/library/): `stats`, `graphics`, `base`.
+#
+### Some Terminology
+#
+## `.Rdata` (.rda, load), Shiny app, hierarchical clustering, melting and casting, dendrogram, tidy data, cooccurence(/adjacency?) matrix, r2py
+#
+## `.Rdata` (https://stats.idre.ucla.edu/r/faq/the-very-basics-of-r/) is a file format for saving all objects and functions created in R
+
+
 ### TIDYING/PARSING RAW SCRIPT TO DATA FRAME
 
 library(dplyr)
